@@ -13,3 +13,10 @@ passo 3: va ate essa pasta e digite
 - npm start
 - Isso compilará o projeto e, em seguida, abrirá uma guia em seu navegador padrão no endereço.
 
+passo 4:inicializar o projeto como git
+- git init
+  git add 
+  git commit -m "Initial Setup"
+
+
+passo 5: eviar para github
