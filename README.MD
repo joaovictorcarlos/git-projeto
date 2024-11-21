@@ -42,6 +42,14 @@ Passo 3: abrir o arquivo App.js na pasta src e apagar tudo entre "div className=
  /div>
  /Navbar""
 
+oque cada um faz?
+
+Navbar dark color="primary: muda todo o plano de fundoi para uma cor primaria no caso azul
+div className="container": classname adiciona classe personalizada, container altera largura largura
+
+
+
+
 Essa substituição ira resultar no seguinte resultado:
 
 ![imagen navbar](navbar.png)
