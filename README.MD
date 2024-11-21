@@ -35,13 +35,13 @@ Passo 2: abrir o arquivo index.js na pasta src e adicionar a seguinte linha aos 
 
 Passo 3: abrir o arquivo App.js na pasta src e apagar tudo entre "div className="App" e "/div" e substituir por:
 
-"<Navbar dark color="primary">
- <div className="container">
- <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
- <div>Aluno: Fulano de Tal</div>
- </div>
- </Navbar"
+""Navbar dark color="primary"
+ div className="container"
+ NavbarBrand href="/">Ristorante Con Fusion /NavbarBrand
+ div Aluno: Fulano de Tal</div>
+ /div>
+ /Navbar""
 
 Essa substituição ira resultar no seguinte resultado:
 
-![imagen navbar]("C:\Users\Aluno\Documents\React\confusion\public\navbar.png")
+![imagen navbar](confusion\public\navbar.png)
