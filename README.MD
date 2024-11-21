@@ -44,4 +44,4 @@ Passo 3: abrir o arquivo App.js na pasta src e apagar tudo entre "div className=
 
 Essa substituição ira resultar no seguinte resultado:
 
-![imagen navbar]("C:\Users\Aluno\Pictures\Screenshots\navbar.png")
+![imagen navbar]("C:\Users\Aluno\Documents\React\confusion\public\navbar.png")
