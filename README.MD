@@ -53,3 +53,86 @@ div className="container": classname adiciona classe personalizada, container al
 Essa substituição ira resultar no seguinte resultado:
 
 ![imagen navbar](navbar.png)
+
+
+## Componentes do react
+
+**objetivo**: Adicionar componentes ao seu aplicativo React
+
+Passos:
+- baixar o arquivo imagens.zip e descompactalo
+- criar uma pasta chamada assets na pasta public e mover a pasta imagens para ela
+- criar uma pasta chamada components na pasta scr e criar o arquivo 'MenuComponent.js' e adicionar o codigo pedido
+
+
+**Explicação do codigo**
+
+"import React, { useState } from 'react';
+import { Media } from 'reactstrap';"
+
+- React: biblioteca para criar interfaces de usuário
+- useState: função fornecida pelo React que permite uma variável de estado em um componente funcional(hook). 
+
+"const Menu = () => {"
+
+- Função 'Menu' é definida
+
+""const [dishes] = useState([
+  {
+    id: 0,
+    name: 'Uthappizza',
+    image: 'assets/images/uthappizza.png',
+    category: 'mains',
+    label: 'Hot',
+    price: '4.99',
+    description: 'A unique combination of Indian Uthappam (pancake) and Italian pizza...',
+  },""
+
+- O hook useState é utilizado para criar o estado dishes, que contém a lista de objetos(os pratos) e cada bloco, como o mostrado acima, vai ter uma variação das descrições do prato
+- id: Identificador do prato
+  name: nome do prato
+  image: caminho para a imagem do prato.
+  category: Categoria do prato (prato principal, aperitivo, sobremesa).
+  label: adicional ("Hot", "New").
+  price: Preço do prato.
+  description: Descrição do prato
+
+
+"const menu = dishes.map((dish) => {
+  return (
+    <div key={dish.id} className="col-12 mt-5">
+      <Media tag="li">
+        <Media left middle>
+          <Media object src={dish.image} alt={dish.name} />
+        </Media>
+        <Media body className="ml-5">
+          <Media heading>{dish.name}</Media>
+          <p>{dish.description}</p>
+        </Media>
+      </Media>
+    </div>
+  );
+});"
+
+- dishes.map(): usado para percorrer cada prato.
+- Media: organiza a imagem e a descrição do prato:
+  Media left middle: coloca a imagem à esquerda e centralizada verticalmente.
+  Media body: Contém o corpo do conteúdo.
+
+
+"return (
+  <div className="container">
+    <div className="row">
+      <Media list>
+        {menu}
+      </Media>
+    </div>
+  </div>
+);"
+
+- container: Um wrapper de layout do Bootstrap que centraliza e dá margem ao conteúdo.
+  row: Define uma linha para organizar as colunas.
+  Media list: Utilizado para agrupar os itens de lista de maneira organizada
+
+"export default Menu;"
+- exportado para ser utilizado em outros lugares.
