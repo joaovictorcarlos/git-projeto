@@ -55,7 +55,7 @@ Essa substituição ira resultar no seguinte resultado:
 ![imagen navbar](navbar.png)
 
 
-## Componentes do react
+## Componentes do react parte 1
 
 **objetivo**: Adicionar componentes ao seu aplicativo React
 
@@ -136,3 +136,72 @@ import { Media } from 'reactstrap';"
 
 "export default Menu;"
 - exportado para ser utilizado em outros lugares.
+
+
+## Componentes do react (aula 10)
+
+Alterações feitas
+
+1- MenuComponent.js:
+- substituição de media por card
+- colocou a funcionalidade de ao selecionar um prato ver mais detalhes
+- a função renderDish mostra os detalhes do prato selecionado
+
+2-app.js:
+-import do arquivo dishes(onde esta as informações do prato)
+
+**MenuComponets.js**
+
+- esse arquivo é o responsavel por mostrar a listra de pratos dentro do layout
+
+imports utilizados:
+- react,{useState}: importa a bliblioteca react e o hook useState
+- { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle }: componetes do reactstrap, cria o layout
+
+componentes:
+
+- card: exibir cada prato visualmente com imagem e um titulo sobreposto
+- cardImg: exibe a imagem do prato
+- cardImgOverlay: sobreposição para o nome do prato
+- cardBody: corpo do cartão, exibe titulo e descrição do prato
+- cardtitle e cardtext: exibe nome e descrição dpo prato
+
+Função onDishSelect:
+- altera o estado selecionado, quando clicar no prato o estado muda para selecteddish
+
+Função renderDish:
+- verifica se há prato selecionado no selecteddish
+
+Função props.dishes.map:
+- percorre a lista de pratos recebida e cria um card para cada prato
+
+**Dishes.js**
+- é onde o array de objetos dos pratos fica
+
+Propriedades:
+- id: indetificar dos pratos
+- name: nome do prato
+- image: caminho da imagem do prato
+- category: categoria do prato
+- label: categoria adicional
+- price: preço
+- description: descrição do prato
+- comments: comentarios feitos por usuarios, e cada comentario tem uma propriedade
+- id: identificador do usuario
+- rating: avaliação do prato
+- comment: texto doi comentario
+- author: nome do usuario
+- date: data do comentario
+
+Tipo de data utilizado:
+
+-ISO 8601
+
+**App.js**
+- componente principal de um React 
+
+Função const [dishes]:
+- define o estado no componente app
+
+Funcionamento de Menu dishes={dishes/}:
+- utiliza o componente menu e passa uma propriedade chamada dishes
