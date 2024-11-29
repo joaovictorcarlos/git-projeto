@@ -13,7 +13,7 @@ function App() {
           <Navbar dark color="primary" expand="md">
             <div className="container">
               <NavbarBrand href="/">Ristorente Con Fusion</NavbarBrand>
-              <div>Aluno: joão victor</div>
+              <div>Aluno: joão victor e pedro leon</div>
             </div>
           </Navbar>
           <Menu dishes={dishes}/>
