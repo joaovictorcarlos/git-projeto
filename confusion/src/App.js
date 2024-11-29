@@ -12,7 +12,7 @@ function App() {
     <div>
           <Navbar dark color="primary" expand="md">
             <div className="container">
-              <NavbarBrand href="/">Ristorente Con Fusion</NavbarBrand>
+              <NavbarBrand href="/">Ratatouille sem Ratatouille </NavbarBrand>
               <div>Aluno: joão victor e pedro leon</div>
             </div>
           </Navbar>
